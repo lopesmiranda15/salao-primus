@@ -11,29 +11,15 @@ st.title("✂️ Salão Primus")
 @st.cache_resource
 def init_connection():
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    credentials = Credentials.from_service_account_info(st.secrets, scopes=scopes)
+    
+    # Criamos uma cópia dos segredos e limpamos qualquer espaço extra na chave privada
+    secrets_dict = dict(st.secrets)
+    if "private_key" in secrets_dict:
+        secrets_dict["private_key"] = secrets_dict["private_key"].strip()
+        
+    credentials = Credentials.from_service_account_info(secrets_dict, scopes=scopes)
     client = gspread.authorize(credentials)
     return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
-    private_key_str = "\n".join(pk_parts)
-
-    creds_dict = {
-        "type": "service_account",
-        "project_id": "salao-primus",
-        "private_key_id": "217b1319e51ce4babbb3904b4a2975e451a1af44",
-        "private_key": private_key_str,
-        "client_email": "robo-salao@salao-primus.iam.gserviceaccount.com",
-        "client_id": "108021907186580997029",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/robo-salao%40salao-primus.iam.gserviceaccount.com",
-        "universe_domain": "googleapis.com"
-    }
-
-    credentials = Credentials.from_service_account_info(creds_dict, scopes=scopes)
-    client = gspread.authorize(credentials)
-    return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
-
 try:
     sheet = init_connection()
 except Exception as e:
