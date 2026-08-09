@@ -11,7 +11,7 @@ st.title("✂️ Salão Primus")
 def init_connection():
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     skey = dict(st.secrets["gcp_service_account"])
-    credentials = Credentials.from_service_account_info(skey, scopes=scopes)
+    skey = dict(st.secrets)
     client = gspread.authorize(credentials)
     return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
 
