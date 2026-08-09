@@ -14,7 +14,7 @@ def init_connection():
     skey = dict(st.secrets["gcp_service_account"])
     credentials = Credentials.from_service_account_info(skey, scopes=scopes)
     client = gspread.authorize(credentials)
-return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
+    return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
 
 try:
     sheet = init_connection()
