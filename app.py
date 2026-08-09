@@ -2,7 +2,7 @@ import streamlit as st
 import gspread
 from google.oauth2.service_account import Credentials
 
-st.title("Conexão")
+st.title("Conexão Salão Primus")
 
 creds = Credentials.from_service_account_file(
     "credenciais.json",
