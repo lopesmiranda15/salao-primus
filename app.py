@@ -15,34 +15,7 @@ def init_connection():
         "type": "service_account",
         "project_id": "salao-primus",
         "private_key_id": "217b1319e51ce4babbb3904b4a2975e451a1af44",
-        "private_key": """-----BEGIN PRIVATE KEY-----
-MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/WZVaHYSP30d+
-U4BnGmcFTkRo2zXHDNpvm017S9DjZSA/xBkC2oR2LTUNmhg0t8c3DmCPq8LPBp/m
-Bjul9EVs2lBB/xQiEqgnv9cCvoCn1a/ZAjgcinpcah53wvhoF0fissK8jBMSx7lm
-fIv9DO+jVuzLxii1nFLGbVN3MJ1K2AJ3vbZiBKHK6Zja7KYeRAiWYP8Jyv/ho6PG
-NUv7EC/BhEo1nO4Wr0ZHoAspJc0fNl/YogBgRHAJWuDK3ConMtb6ONlBB0/pHNdX
-N36sHlgrGLZ5Xe4tH1iQSV2T5MIvKwVi54oJ0wrp4VQMHBvxW0unB7+9KV1ys/8Q
-VvQpbjt1AgMBAAECggEAIS9SV0dMvN3Sao5lM5xQ1wr4kr3HoQ5x2I60vIgMwU8B
-rYVe+A95DvyumX4KqiPgJQR1ix0U4y4JL42PrSuEmcjvx85KydD2ADTFP2jV66WD
-wm0f2ZVLfLj7sTXrOjQlZ6OsYaIiUay5EtTRO1DRw4BY/0sNttdWRKrjoYVZFgg8
-iu/IkCBePaYToDE2CdtUTo1+kNy6z5g9pJJ1tyDpt6JzR7tX5A8jIebEz2JQFsHU
-6DZDsbw0hHeIf9ovQIze8rh+g/LtdElh41LVfwpmy+Eb6k8hhxRC4PwVzbdyIQ8J
-qxZNPveLQZNBnGSRKplS6ReaY0C4u4zqf2HKWmMFIQKBgQD2NtBeZWQMYRKLPPrG
-Xsu++Ea9JjmIqfv5tWSnIq3TAWAiUpA/b7DG1u4jxHFK6rMEkKx3xy4453lj+j6q
-2Osx7Qs4p+hF53lVcCVpemwdTKUkHTJLhyZBP2zv95DT0MtfWaSKepE+dpRCOjln
-rsAcNmbBOr0+uJH9FiYasxS6YQKBgQDG9IkxC5FX+UaaEFMMPI8Po2lRpFZUxt2k
-ldl+tG7vHta83daPdYOqYBdraFnoPfaxEVLhR6YJFBs6ZQ9UjOBbMC546CW2xT05
-DlSMihOJV1micaJ1L1bXfTYT5DrAw3IKL3w8K7ZPLQg4rPtfPBSD5oeK7/nHOiqF
-SM8vwh9hlQKBgQDOHAjGXL4qFsD9Smjr0sNg9FnTUcJsA1BqM001FLTKpKYjVVZn
-npEopyhbEXlgwzNRbh/i4tEafYDagWQZI4xnQS41POlAY5LMPsLfA2rjStiywVLib
-nvWFq0XuSTn4wsuLsyRAS1JPt5DosTq1rfEBZ3bibHV76uGuNoBL52twJQQKBgET3
-nc686sVFrqduyGPe+7mCfZtzUOND+dsqc314asfHWIN4rkDr+o3ul/7hN3gyxnhhX
-RwGs0pOHEsE1UxEeHI+/rfxfjONEkCp9GzX0jz0muH2lIom4tUPRtbNDhFJZ7eg1
-+bzp8jKUC6uJ20FyFDJ88TNqaI11TlQRnzCQ/EvZAoGBAJzSqXT/ffeI82VUuEAX
-PyuHryG8F/LavqLpl0oUfRePRcIgb4yL8oNjVD3Z6GKXLqoLHggfgQ7btZgS8fqS
-kOUp896CNWr5C25FwIAzZpK9wz+LqM8GmJtsQNOI2Ho16I5JmuPpVGdC9yZMH3T3
-C8gD+YYDU40/rPdExWUo5zqu
------END PRIVATE KEY-----""",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/WZVaHYSP30d+\nU4BnGmcFTkRo2zXHDNpvm017S9DjZSA/xBkC2oR2LTUNmhg0t8c3DmCPq8LPBp/m\nBjul9EVs2lBB/xQiEqgnv9cCvoCn1a/ZAjgcinpcah53wvhoF0fissK8jBMSx7lm\nfIv9DO+jVuzLxii1nFLGbVN3MJ1K2AJ3vbZiBKHK6Zja7KYeRAiWYP8Jyv/ho6PG\nNUv7EC/BhEo1nO4Wr0ZHoAspJc0fNl/YogBgRHAJWuDK3ConMtb6ONlBB0/pHNdX\nN36sHlgrGLZ5Xe4tH1iQSV2T5MIvKwVi54oJ0wrp4VQMHBvxW0unB7+9KV1ys/8Q\nVvQpbjt1AgMBAAECggEAIS9SV0dMvN3Sao5lM5xQ1wr4kr3HoQ5x2I60vIgMwU8B\nrYVe+A95DvyumX4KqiPgJQR1ix0U4y4JL42PrSuEmcjvx85KydD2ADTFP2jV66WD\nwm0f2ZVLfLj7sTXrOjQlZ6OsYaIiUay5EtTRO1DRw4BY/0sNttdWRKrjoYVZFgg8\niu/IkCBePaYToDE2CdtUTo1+kNy6z5g9pJJ1tyDpt6JzR7tX5A8jIebEz2JQFsHU\n6DZDsbw0hHeIf9ovQIze8rh+g/LtdElh41LVfwpmy+Eb6k8hhxRC4PwVzbdyIQ8J\qxZNPveLQZNBnGSRKplS6ReaY0C4u4zqf2HKWmMFIQKBgQD2NtBeZWQMYRKLPPrG\nXsu++Ea9JjmIqfv5tWSnIq3TAWAiUpA/b7DG1u4jxHFK6rMEkKx3xy4453lj+j6q\n2Osx7Qs4p+hF53lVcCVpemwdTKUkHTJLhyZBP2zv95DT0MtfWaSKepE+dpRCOjln\nrsAcNmbBOr0+uJH9FiYasxS6YQKBgQDG9IkxC5FX+UaaEFMMPI8Po2lRpFZUxt2k\nldl+tG7vHta83daPdYOqYBdraFnoPfaxEVLhR6YJFBs6ZQ9UjOBbMC546CW2xT05\DlSMihOJV1micaJ1L1bXfTYT5DrAw3IKL3w8K7ZPLQg4rPtfPBSD5oeK7/nHOiqF\nSM8vwh9hlQKBgQDOHAjGXL4qFsD9Smjr0sNg9FnTUcJsA1BqM001FLTKpKYjVVZn\npEopyhbEXlgwzNRbh/i4tEafYDagWQZI4xnQS41POlAY5LMPsLfA2rjStiywVLib\nvWFq0XuSTn4wsuLsyRAS1JPt5DosTq1rfEBZ3bibHV76uGuNoBL52twJQQKBgET3\nc686sVFrqduyGPe+7mCfZtzUOND+dsqc314asfHWIN4rkDr+o3ul/7hN3gyxnhhX\RwGs0pOHEsE1UxEeHI+/rfxfjONEkCp9GzX0jz0muH2lIom4tUPRtbNDhFJZ7eg1\+bzp8jKUC6uJ20FyFDJ88TNqaI11TlQRnzCQ/EvZAoGBAJzSqXT/ffeI82VUuEAX\PyuHryG8F/LavqLpl0oUfRePRcIgb4yL8oNjVD3Z6GKXLqoLHggfgQ7btZgS8fqS\nkOUp896CNWr5C25FwIAzZpK9wz+LqM8GmJtsQNOI2Ho16I5JmuPpVGdC9yZMH3T3\C8gD+YYDU40/rPdExWUo5zqu\n-----END PRIVATE KEY-----",
         "client_email": "robo-salao@salao-primus.iam.gserviceaccount.com",
         "client_id": "108021907186580997029",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -61,6 +34,7 @@ try:
 except Exception as e:
     st.error(f"Erro detalhado de conexão: {e}")
     st.stop()
+
 def get_data(worksheet_name, cols):
     try:
         ws = sheet.worksheet(worksheet_name)
