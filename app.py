@@ -10,7 +10,6 @@ st.title("✂️ Salão Primus")
 @st.cache_resource
 def init_connection():
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    # Pega a chave do robô que vamos configurar na nuvem
     skey = dict(st.secrets["gcp_service_account"])
     credentials = Credentials.from_service_account_info(skey, scopes=scopes)
     client = gspread.authorize(credentials)
@@ -19,11 +18,15 @@ def init_connection():
 try:
     sheet = init_connection()
 except Exception as e:
-    st.error("Conectando ao banco de dados em nuvem... Caso o erro persista, verifique as chaves.")
+    st.error(f"Erro detalhado de conexão: {e}")
     st.stop()
 
 def get_data(worksheet_name, cols):
-    ws = sheet.worksheet(worksheet_name)
+    try:
+        ws = sheet.worksheet(worksheet_name)
+    except:
+        ws = sheet.add_worksheet(title=worksheet_name, rows=100, cols=20)
+        ws.append_row(cols)
     data = ws.get_all_records()
     df = pd.DataFrame(data)
     if df.empty:
