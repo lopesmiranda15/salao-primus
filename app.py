@@ -25,7 +25,7 @@ N36sHlgrGLZ5Xe4tH1iQSV2T5MIvKwVi54oJ0wrp4VQMHBvxW0unB7+9KV1ys/8Q
 VvQpbjt1AgMBAAECggEAIS9SV0dMvN3Sao5lM5xQ1wr4kr3HoQ5x2I60vIgMwU8B
 rYVe+A95DvyumX4KqiPgJQR1ix0U4y4JL42PrSuEmcjvx85KydD2ADTFP2jV66WD
 wm0f2ZVLfLj7sTXrOjQlZ6OsYaIiUay5EtTRO1DRw4BY/0sNttdWRKrjoYVZFgg8
-niu/IkCBePaYToDE2CdtUTo1+kNy6z5g9pJJ1tyDpt6JzR7tX5A8jIebEz2JQFsHU
+iu/IkCBePaYToDE2CdtUTo1+kNy6z5g9pJJ1tyDpt6JzR7tX5A8jIebEz2JQFsHU
 6DZDsbw0hHeIf9ovQIze8rh+g/LtdElh41LVfwpmy+Eb6k8hhxRC4PwVzbdyIQ8J
 qxZNPveLQZNBnGSRKplS6ReaY0C4u4zqf2HKWmMFIQKBgQD2NtBeZWQMYRKLPPrG
 Xsu++Ea9JjmIqfv5tWSnIq3TAWAiUpA/b7DG1u4jxHFK6rMEkKx3xy4453lj+j6q
@@ -42,7 +42,7 @@ RwGs0pOHEsE1UxEeHI+/rfxfjONEkCp9GzX0jz0muH2lIom4tUPRtbNDhFJZ7eg1
 PyuHryG8F/LavqLpl0oUfRePRcIgb4yL8oNjVD3Z6GKXLqoLHggfgQ7btZgS8fqS
 kOUp896CNWr5C25FwIAzZpK9wz+LqM8GmJtsQNOI2Ho16I5JmuPpVGdC9yZMH3T3
 C8gD+YYDU40/rPdExWUo5zqu
------END PRIVATE KEY-----""",
+-----END PRIVATE KEY-----""".strip(),
         "client_email": "robo-salao@salao-primus.iam.gserviceaccount.com",
         "client_id": "108021907186580997029",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
