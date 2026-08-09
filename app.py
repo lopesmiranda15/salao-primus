@@ -4,9 +4,8 @@ from google.oauth2.service_account import Credentials
 
 st.title("Conexão")
 
-# Usando o nome exato que apareceu na tela com o ponto final
 creds = Credentials.from_service_account_file(
-    "credenciais.json.",
+    "credenciais.json",
     scopes=["https://www.googleapis.com/auth/spreadsheets"]
 )
 client = gspread.authorize(creds)
