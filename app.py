@@ -9,14 +9,9 @@ st.title("✂️ Salão Primus")
 @st.cache_resource
 def init_connection():
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    credentials = Credentials.from_service_account_info(
-        dict(st.secrets["gcp_service_account"]), 
-        scopes=scopes
-    )
+    credentials = Credentials.from_service_account_info(dict(st.secrets["gcp_service_account"]), scopes=scopes)
     client = gspread.authorize(credentials)
     return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
-
-
 try:
     sheet = init_connection()
 except Exception as e:
