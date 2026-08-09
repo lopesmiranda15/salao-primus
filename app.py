@@ -6,12 +6,10 @@ from datetime import datetime
 
 st.set_page_config(page_title="Salão Primus", page_icon="✂️", layout="wide")
 st.title("✂️ Salão Primus")
-
 @st.cache_resource
 def init_connection():
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    skey = dict(st.secrets["gcp_service_account"])
-    skey = dict(st.secrets)
+    credentials = Credentials.from_service_account_info(dict(st.secrets), scopes=scopes)
     client = gspread.authorize(credentials)
     return client.open_by_url("https://docs.google.com/spreadsheets/d/1QmaDuA8C0ihw4iQ6CQUDT1vgHEPiKNZtqJQAflbqyC8/edit?usp=sharing")
 
